@@ -25,6 +25,10 @@ namespace AnotherHelloWorld
             Console.ReadKey(true);
             Console.WriteLine();
 
+            Console.WriteLine("Enter a username");
+            string username = Console.ReadLine();
+            Console.WriteLine();
+
             Console.WriteLine("=====================");
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Health: " + health);
@@ -34,7 +38,6 @@ namespace AnotherHelloWorld
             Console.ReadKey(true);
             Console.WriteLine();
 
-            
             pointsgained = 250;
             healthlost = 20;
 
@@ -44,10 +47,10 @@ namespace AnotherHelloWorld
             Console.WriteLine("=====================");
 
             Console.WriteLine("In Battle the ");
-            Console.WriteLine("player gained " + pointsgained + " points.");
+            Console.WriteLine(username + " gained " + pointsgained + " points.");
             
-            Console.WriteLine("In Battle the ");
-            Console.WriteLine("player lost " + healthlost + " health.");
+            Console.WriteLine("In Battle ");
+            Console.WriteLine(username + " lost " + healthlost + " health.");
 
             Console.WriteLine("=====================");
 
@@ -63,6 +66,8 @@ namespace AnotherHelloWorld
             Console.WriteLine();
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
+
         }
     }
 }
+
