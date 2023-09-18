@@ -17,7 +17,7 @@ namespace AnotherHelloWorld
             int pointsgained;
             int healthlost;
 
-            Console.WriteLine("Hud v1");
+            Console.WriteLine("Hud v1.0");
             
 
             Console.WriteLine();
